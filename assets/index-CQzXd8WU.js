@@ -147,7 +147,7 @@ padding: 20px
         gap: 20px;
         
     }
-`,Jv=({toogle:c})=>tt.jsxs($v,{children:[tt.jsx("div",{children:tt.jsx("img",{src:"/images/dices.png",alt:""})}),tt.jsxs("div",{className:"content",children:[tt.jsx("h1",{children:"Dice game"}),tt.jsx(or,{onClick:c,children:"Play Now"})]})]}),$v=Gl.div`
+`,Jv=({toogle:c})=>tt.jsxs($v,{children:[tt.jsx("div",{children:tt.jsx("img",{src:"/images/dices.png",alt:"hi"})}),tt.jsxs("div",{className:"content",children:[tt.jsx("h1",{children:"Dice game"}),tt.jsx(or,{onClick:c,children:"Play Now"})]})]}),$v=Gl.div`
  max-width: 1180px;
  display: flex;
  margin: 0 auto;
