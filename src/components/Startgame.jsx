@@ -4,7 +4,7 @@ const Startgame = ({toogle}) => {
   return (
     <Container>
         <div>
-        <img src="/images/dices.png" alt="" />
+        <img src="/images/dices.png" alt="profile" />
 
         </div>
          <div className='content'>
