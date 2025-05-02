@@ -93,17 +93,17 @@ padding: 20px
 .text{
     margin: 20px
 }
-`,Zv=({rollDice:c,dice:s})=>tt.jsxs(Vv,{children:[tt.jsx("div",{className:"Dice",onClick:c,children:tt.jsx("img",{src:`/images/dice/dice_${s}.png`,alt:""})}),tt.jsx("p",{children:"Click on Dice to roll"})]}),Vv=Gl.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .Dice{
-    cursor: pointer;}
-    p{
-        font-size: 20px;
-        font-weight: 600;
-        
-    }    
+`,Zv={1:"/images/dice/dice_1.png"},Vv=({rollDice:c,dice:s})=>tt.jsxs(Lv,{children:[tt.jsx("div",{className:"Dice",onClick:c,children:tt.jsx("img",{src:Zv[1],alt:`Dice ${s}`,width:"100",height:"100"})}),tt.jsx("p",{children:"Click on Dice to roll"})]}),Lv=Gl.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .Dice {
+    cursor: pointer;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
 `,or=Gl.button`
   padding:10px 18px;
   border-radius: 5px;
@@ -122,7 +122,7 @@ padding: 20px
     border: 1px solid rgb(0, 0, 0);
     transition: all 0.3s ease-in;
   }
-`,Lv=Gl(or)`
+`,Kv=Gl(or)`
   background: #fff;
   color: rgb(0, 0, 0);
   border: 1px solid black;
@@ -133,7 +133,7 @@ padding: 20px
     border: 1px solid transparent;
     transition: all 0.3s ease-in;
   }
-`,Kv=()=>{const[c,s]=jl.useState(0),[o,r]=jl.useState(),[S,z]=jl.useState(1),[R,Y]=jl.useState(""),[M,E]=jl.useState(!1),U=(G,$)=>Math.floor(Math.random()*($-G)+G),C=()=>{s(0)},j=()=>{if(o===void 0){Y("You have not selected any number");return}const G=U(1,7);z($=>G),console.log(G),s(G===r?$=>$+G:$=>$-2),r(void 0)};return tt.jsxs(wv,{children:[tt.jsxs("div",{className:"topsection",children:[tt.jsx(Yv,{score:c}),tt.jsx(Cv,{selectNumber:o,setSelectNumber:r,error:R,setError:Y})]}),tt.jsx(Zv,{rollDice:j,dice:S}),tt.jsxs("div",{className:"btns",children:[tt.jsx(or,{onClick:C,children:"Reset Score"}),tt.jsxs(Lv,{onClick:()=>E(G=>!G),children:[M?"Hide":"Show","Rules"]})]}),M&&tt.jsx(Xv,{})]})},wv=Gl.div`
+`,wv=()=>{const[c,s]=jl.useState(0),[o,r]=jl.useState(),[S,z]=jl.useState(1),[R,Y]=jl.useState(""),[M,E]=jl.useState(!1),U=(G,$)=>Math.floor(Math.random()*($-G)+G),C=()=>{s(0)},j=()=>{if(o===void 0){Y("You have not selected any number");return}const G=U(1,7);z($=>G),console.log(G),s(G===r?$=>$+G:$=>$-2),r(void 0)};return tt.jsxs(Jv,{children:[tt.jsxs("div",{className:"topsection",children:[tt.jsx(Yv,{score:c}),tt.jsx(Cv,{selectNumber:o,setSelectNumber:r,error:R,setError:Y})]}),tt.jsx(Vv,{rollDice:j,dice:S}),tt.jsxs("div",{className:"btns",children:[tt.jsx(or,{onClick:C,children:"Reset Score"}),tt.jsxs(Kv,{onClick:()=>E(G=>!G),children:[M?"Hide":"Show","Rules"]})]}),M&&tt.jsx(Xv,{})]})},Jv=Gl.div`
 .topsection{
     padding: 30px 80px;
     display: flex;
@@ -147,7 +147,7 @@ padding: 20px
         gap: 20px;
         
     }
-`,Jv=({toogle:c})=>tt.jsxs($v,{children:[tt.jsx("div",{children:tt.jsx("img",{src:"/images/dices.png",alt:"hi"})}),tt.jsxs("div",{className:"content",children:[tt.jsx("h1",{children:"Dice game"}),tt.jsx(or,{onClick:c,children:"Play Now"})]})]}),$v=Gl.div`
+`,$v="/Guess-Dice/assets/dices-BDxrte9H.png",kv=({toogle:c})=>tt.jsxs(Wv,{children:[tt.jsx("div",{children:tt.jsx("img",{src:$v,alt:"logo-Pic"})}),tt.jsxs("div",{className:"content",children:[tt.jsx("h1",{children:"Dice game"}),tt.jsx(or,{onClick:c,children:"Play Now"})]})]}),Wv=Gl.div`
  max-width: 1180px;
  display: flex;
  margin: 0 auto;
@@ -162,4 +162,4 @@ padding: 20px
  white-space: nowrap;
  }
  }
- `;function kv(){const[c,s]=jl.useState(!1),o=()=>{s(r=>!r)};return tt.jsx(tt.Fragment,{children:c?tt.jsx(Kv,{}):tt.jsx(Jv,{toogle:o})})}xy.createRoot(document.getElementById("root")).render(tt.jsx(jl.StrictMode,{children:tt.jsx(kv,{})}));
+ `;function Fv(){const[c,s]=jl.useState(!1),o=()=>{s(r=>!r)};return tt.jsx(tt.Fragment,{children:c?tt.jsx(wv,{}):tt.jsx(kv,{toogle:o})})}xy.createRoot(document.getElementById("root")).render(tt.jsx(jl.StrictMode,{children:tt.jsx(Fv,{})}));
